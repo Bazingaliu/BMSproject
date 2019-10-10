@@ -1,0 +1,205 @@
+tzappbanben.html
+
+更新数据库
+python manage.py makemigrations
+python manage.py migrate
+
+https://www.testin.cn/account/register.htm?&channel=bug_manager_redirect&re=https://bug.testin.cn/index.htm#/overview
+
+#user表添加字段
+
+
+first_name = models.CharField(_('first name'), max_length=30, blank=True)
+    last_name = models.CharField(_('last name'), max_length=30, blank=True)
+    projectid = models.IntegerField(blank=True, null=True,)
+    deptid = models.IntegerField(blank=True, null=True,)
+
+
+
+昊天haotian
+
+思聪sichong
+王敏
+
+王磊
+刘洋
+王艳
+李敏洁
+张丽
+张静
+
+
+
+
+展鹏zhanpeng
+笑愚xiaoyu
+张伟zhangwei
+王芳wangfang
+李娜
+
+
+
+
+
+李强
+
+
+
+
+
+王勇
+李军
+张勇
+李杰
+张杰
+
+张敏
+李娟
+王军
+张涛
+
+
+
+陈静-项目管理
+刘勇
+
+李玲
+
+李桂英
+
+刘静
+
+王丹
+
+李刚
+李丹
+
+李萍
+
+王鹏
+
+
+刘涛
+
+陈伟
+
+张华
+
+
+
+
+http://www.cssmoban.com/code/button/
+代码按钮
+
+class="btn btn-info dropdown-toggle"
+
+系统管理员
+index
+
+项目开发
+xmindex
+
+产品管理
+cpindex
+
+产品开发
+kfindex
+
+user=request.user
+if user.is_authenticated:
+        if user.last_name == '系统管理员':
+            return HttpResponseRedirect('/index/')
+        elif user.last_name == '项目开发人员':
+            return HttpResponseRedirect('/xmindex/')
+        elif user.last_name == '产品管理员':
+            return HttpResponseRedirect('/cpindex/')
+        elif user.last_name == '产品开发人员':
+            return HttpResponseRedirect('/kfindex/')
+        else:
+            logout()
+            return HttpResponseRedirect('/denglu/')
+else:
+	return HttpResponseRedirect('/denglu/')
+
+
+
+空页面提醒
+
+<div class="handleRecord" ng-show="logList.length==0">
+                    <img src="/static/pic/icon.png" alt="">
+                    <p>暂无历史记录~快去 <a href="https://bug.testin.cn/index.htm?re=https%3A%2F%2Fbug.testin.cn%2Findex.htm&amp;channel=bug_manager_redirect" data-ng-click="showNewDefectWithPermi($event)">创建问题</a>吧~</p>
+                </div>
+                <div class="cell ng-hide" ng-show="!logList">
+                    <div class="card">
+                        <span class="dots-loader">Loading…</span>
+                    </div>
+                </div>
+
+
+
+
+
+<img src="/static/pic/buglogo.png" style=' width:25px'>
+
+buglogo.png
+
+bugout-logo@2x.png
+
+xitgly.png
+
+userdd.png
+
+zhuye333.png
+
+#495A80
+
+style="background-color: #1abc9c;
+    border-color: #1abc9c"
+
+/static/pic/head.png
+
+mexplain
+
+id= models.AutoField(primary_key=True)
+    name = models.CharField(max_length=80, blank=True, null=True)
+    describe=models.CharField(max_length=200)
+    date = models.DateTimeField('保存日期', default=timezone.now)
+
+
+
+style="border-collapse: collapse;
+    border: 0;
+    padding: 0;
+    margin: 0;
+border_top:none"
+
+describedd='分配问题:'+matter.mtitle+'-给:'+userdd.first_name
+                    Dongtai.objects.create(name=user.first_name,describe=describedd)
+
+
+
+paged = Paginator(userlist, 10)
+            try:
+                page = int(request.GET.get('page', 1))
+                userlist = paged.page(page)
+            except:
+                userlist = paged.page(1)
+
+            content = {}
+            content['userlist'] = userlist
+
+
+tzappproject.html
+tzappproject.html
+
+专业的运动跑步健身社区，智能运动健身全攻略，跑步健身计步瑜伽，运动全方位指导和记录，属于跑者的圈子，运动健康数据记录分析，超有爱的运动跑步健身APP。
+
+
+gerenxinxilogo.png
+
+
+
+
+
+
+
